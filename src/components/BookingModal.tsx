@@ -68,7 +68,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
       `*Serviços Selecionados (${selectedServices.length}):*%0A${servicesListText}%0A%0A` +
       `*Valor Total:* R$ ${totalPrice},00%0A` +
       (hasBeardOrHair
-        ? `*Toalha Quente & Lavagem:* Inclusa no atendimento%0A`
+        ? `*Toalha Aquecida & Lavagem:* Inclusa no atendimento%0A`
         : '') +
       `*Horário Preferencial:* ${encodeURIComponent(selectedTime)}%0A%0A` +
       `_Gostaria de confirmar este agendamento na barbearia._`;
@@ -191,7 +191,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     </option>
                   ))}
                 </optgroup>
-                <optgroup label="🌙 Fim de Tarde / Noite (17:00 - 18:30)">
+                <optgroup label="🌙 Fim de Tarde / Noite (17:00 - 19:00)">
                   {TIME_SLOTS.filter((t) => parseInt(t.split(':')[0], 10) >= 17).map((t) => (
                     <option key={t} value={t}>
                       {t} — Fim de Tarde
@@ -236,7 +236,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <span className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0 animate-pulse" />
               <span className="font-['Raleway'] text-[11px]">
                 {hasBeardOrHair
-                  ? 'Ritual de toalha quente & lavagem capilar inclusos no atendimento'
+                  ? 'Ritual de toalha aquecida & lavagem capilar inclusos no atendimento'
                   : 'Lâminas descartáveis trocadas na hora a cada cliente'}
               </span>
             </div>

@@ -1,6 +1,6 @@
 {
   "name": "Barbearia Navalha - Cascavel CE",
-  "description": "Barbearia local no Centro de Cascavel - CE. Degradê na régua, barba na navalha, sobrancelha, pigmentação e platinado com preço justo e atendimento ágil.",
+  "description": "Barbearia local no Centro de Cascavel - CE. Degradê na régua, barba na navalha, sobrancelha, pigmentação e platinado com preço acessível e atendimento individual.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

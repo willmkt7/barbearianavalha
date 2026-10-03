@@ -68,18 +68,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
               <div className="flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#121622] border border-[#F5E6C8]/30 shadow-lg">
                 <NavalhaLogo className="w-5 h-5" />
                 <span className="text-[11px] font-['Bebas_Neue'] tracking-[0.25em] uppercase text-[#F5E6C8]">
-                  BARBEARIA LOCAL • CASCAVEL - CE
+                  BARBEARIA • CASCAVEL - CE
                 </span>
               </div>
               <span className="text-xs text-zinc-400 font-['Oswald'] uppercase tracking-wider hidden sm:inline">
-                Preço Justo & Atendimento Rápido
+                Preço Acessível & Atendimento Individual
               </span>
             </motion.div>
 
             {/* Poster Headline directly inspired by reference image */}
             <motion.div variants={itemVariants} className="mb-3">
               <span className="block font-['Alex_Brush'] text-4xl sm:text-5xl lg:text-6xl text-[#F5E6C8] -mb-3 sm:-mb-4">
-                comece a semana com o visual alinhado
+                Mais que um corte, uma experiência
               </span>
               <h1 className="font-['Bebas_Neue'] tracking-tight text-white leading-[0.92] text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase drop-shadow-2xl">
                 BARBEARIA NAVALHA
@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
               variants={itemVariants}
               className="text-lg sm:text-xl md:text-2xl text-[#F5E6C8] font-['Oswald'] uppercase tracking-wider font-semibold mb-4 max-w-2xl"
             >
-              Corte de qualidade, preço justo e sem enrolação.
+              CORTE DE QUALIDADE, CONFORTO E ATENÇÃO INDIVIDUAL
             </motion.p>
 
             {/* Clarifying Services Focus with objective local description */}
@@ -99,7 +99,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
               variants={itemVariants}
               className="text-sm sm:text-base text-zinc-300 leading-relaxed font-['Raleway'] max-w-2xl mb-8"
             >
-              Sua barbearia no Centro de Cascavel - CE. Cortes simples e premium, barba com toalha quente, combos completos, sobrancelhas, luzes e hidratação. Atendimento pontual, lâminas 100% descartáveis e valores acessíveis para você manter o visual sempre em dia.
+              Sua barbearia no Centro de Cascavel - CE. Cortes simples e premium, barba com toalha aquecida, combos completos, sobrancelhas, luzes e hidratação. Atendimento pontual, lâminas 100% descartáveis e valores acessíveis para você manter o visual sempre em dia.
             </motion.p>
 
             {/* CTAs */}
@@ -120,7 +120,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
                 onClick={onExploreServices}
                 className="px-7 py-4 rounded bg-[#10141e]/90 hover:bg-[#182030] text-zinc-200 hover:text-white font-['Bebas_Neue'] text-lg tracking-widest uppercase border border-white/15 hover:border-[#F5E6C8]/40 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
               >
-                <span>VER SERVIÇOS & VALORES</span>
+                <span>VISUALIZAR A TABELA DE SERVIÇOS</span>
               </button>
             </motion.div>
 
@@ -131,19 +131,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
             >
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="w-4 h-4 text-[#E31837] flex-shrink-0" />
-                <span>Toalha Quente & Lavagem</span>
+                <span>TOALHA AQUECIDA E LAVAGEM</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle2 className="w-4 h-4 text-[#F5E6C8] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
                 <span>Lâminas Descartáveis</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle2 className="w-4 h-4 text-[#F5E6C8] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
                 <span>Preços Acessíveis</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle2 className="w-4 h-4 text-[#1E3A8A] flex-shrink-0" />
-                <span>Corte na Régua</span>
+                <CheckCircle2 className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                <span>CORTE PREMIUM</span>
               </div>
             </motion.div>
           </motion.div>
@@ -165,8 +165,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
                       BARBEARIA NAVALHA
                     </span>
                   </div>
-                  <span className="bg-[#E31837] text-white px-2 py-0.5 rounded text-[10px] font-['Bebas_Neue'] tracking-wider uppercase">
-                    ESTAMOS ABERTOS
+                  <span className="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px] font-['Bebas_Neue'] tracking-wider uppercase">
+                    ESTAMOS FUNCIONANDO
                   </span>
                 </div>
 
@@ -180,7 +180,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
                     Barbearia Navalha
                   </span>
                   <span className="text-[10px] font-['Raleway'] text-zinc-400">
-                    Marca Oficial • Cascavel - CE
+                    TRADIÇÃO - ESTILO - ATITUDE
                   </span>
                 </div>
 
@@ -199,7 +199,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
                   </div>
                   <div className="flex items-center space-x-2 text-xs text-zinc-300 pt-1 border-t border-white/5">
                     <Clock className="w-3.5 h-3.5 text-[#F5E6C8] flex-shrink-0" />
-                    <span>Seg a Sex: 09h às 19h • Sáb: 09h às 18h • Dom: 08h às 12h</span>
+                    <span>Seg a Sáb: 08h às 19h • Dom: 08h às 12h</span>
                   </div>
                 </div>
 

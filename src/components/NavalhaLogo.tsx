@@ -13,120 +13,83 @@ export const NavalhaLogo: React.FC<NavalhaLogoProps> = ({
 }) => {
   const style = size ? { width: size, height: size } : undefined;
 
+  const bladePath = `
+    M 466 300
+    C 402 420, 336 560, 280 695
+    C 274 712, 282 728, 298 734
+    L 328 742
+    C 342 746, 352 736, 358 718
+    L 450 466
+    C 453 458, 450 452, 442 446
+    L 422 432
+    C 415 426, 414 418, 420 408
+    L 486 308
+    Z
+  `;
+
+  const handleAndTangPath = `
+    M 455 262
+    C 450 236, 476 226, 496 246
+    C 512 222, 520 190, 520 162
+    C 520 144, 544 144, 545 166
+    C 546 198, 534 236, 514 268
+    C 582 380, 650 520, 712 722
+    C 720 752, 694 776, 664 774
+    C 640 772, 626 752, 616 722
+    C 568 565, 516 415, 458 274
+    C 456 269, 455 265, 455 262
+    Z
+  `;
+
   return (
     <svg
-      viewBox="0 0 500 500"
+      viewBox="0 0 1000 1000"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`select-none flex-shrink-0 ${className}`}
       style={style}
       aria-label="Logo Barbearia Navalha"
     >
-      <defs>
-        {/* Blue circle radial depth */}
-        <radialGradient id="navalhaBlue" cx="50%" cy="45%" r="55%">
-          <stop offset="0%" stopColor="#2F60E8" />
-          <stop offset="65%" stopColor="#204EC8" />
-          <stop offset="100%" stopColor="#17399B" />
-        </radialGradient>
-
-        {/* Subtle drop shadow for razor */}
-        <filter id="razorShadow" x="-10%" y="-10%" width="120%" height="120%">
-          <feDropShadow dx="0" dy="4" stdDeviation="6" floodColor="#091432" floodOpacity="0.45" />
-        </filter>
-      </defs>
-
       {withCircle && (
-        <>
-          {/* Outer dark ring */}
-          <circle
-            cx="250"
-            cy="250"
-            r="234"
-            fill="#090d18"
-            stroke="#1b233a"
-            strokeWidth="4"
-          />
-
-          {/* Main Blue Circle */}
-          <circle
-            cx="250"
-            cy="250"
-            r="222"
-            fill="url(#navalhaBlue)"
-            stroke="#0b1122"
-            strokeWidth="14"
-          />
-        </>
+        <circle
+          cx="500"
+          cy="500"
+          r="430"
+          fill="#0037B3"
+          stroke="#000000"
+          strokeWidth="26"
+        />
       )}
 
-      {/* Razor Graphics Group */}
-      <g filter="url(#razorShadow)">
-        {/* Left Arm: Blade & Shank (Navalha) */}
+      {/* Left Arm: Blade & Notched Shank */}
+      <g>
         <path
-          d="M 238 162 
-             L 214 246 
-             L 229 250 
-             L 204 350 
-             C 194 390, 142 414, 126 376 
-             C 112 342, 144 300, 168 250 
-             L 220 148 
-             Z"
-          fill="#FFFFFF"
-          stroke="#0D111A"
-          strokeWidth="15"
+          d={bladePath}
+          fill="#000000"
+          stroke="#000000"
+          strokeWidth="54"
           strokeLinejoin="round"
           strokeLinecap="round"
         />
-
-        {/* Notch / Step detail on inner blade edge */}
-        <path
-          d="M 216 238 
-             L 230 242 
-             L 220 280 
-             L 206 276 
-             Z"
-          fill="#0D111A"
-        />
-
-        {/* Tang / Hook (Espiga da navalha curva no topo) */}
-        <path
-          d="M 242 165 
-             C 246 142, 256 122, 270 112 
-             C 278 106, 286 112, 282 124 
-             C 274 146, 262 166, 252 182 
-             Z"
-          fill="#FFFFFF"
-          stroke="#0D111A"
-          strokeWidth="14"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-        />
-
-        {/* Right Arm: Handle (Cabo do navalhete) */}
-        <path
-          d="M 228 152 
-             C 242 142, 258 144, 268 158 
-             L 348 316 
-             C 368 356, 372 388, 350 414 
-             C 328 436, 298 424, 284 386 
-             L 222 178 
-             Z"
-          fill="#FFFFFF"
-          stroke="#0D111A"
-          strokeWidth="15"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-        />
-
-        {/* Pivot Pin / Rivet (Rebite de articulação central) */}
-        <circle
-          cx="248"
-          cy="172"
-          r="9"
-          fill="#0D111A"
-        />
+        <path d={bladePath} fill="#FFFFFF" />
       </g>
+
+      {/* Right Arm: Handle & Tang */}
+      <g>
+        <path
+          d={handleAndTangPath}
+          fill="#000000"
+          stroke="#000000"
+          strokeWidth="54"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        />
+        <path d={handleAndTangPath} fill="#FFFFFF" />
+      </g>
+
+      {/* Pivot Pin */}
+      <circle cx="488" cy="280" r="11" fill="#000000" />
     </svg>
   );
 };
+

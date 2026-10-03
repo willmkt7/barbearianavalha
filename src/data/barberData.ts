@@ -25,24 +25,24 @@ export {
 
 export const BUSINESS_INFO = {
   name: 'Barbearia Navalha',
-  tagline: 'Barbearia Local • Preço Justo e Corte na Régua',
-  headline: 'Corte de qualidade, preço justo e sem enrolação.',
+  tagline: 'Barbearia Local • Preço Acessível e Atendimento Individual',
+  headline: 'Corte de qualidade, preço acessível e atendimento individual.',
   subheadline: 'Cascavel - CE • A sua barbearia no Centro de Cascavel. Espaço novo, lâminas descartáveis, atendimento pontual e valores acessíveis para você manter o visual sempre em dia.',
   phoneFormatted: '(85) 99156-4729',
   phoneRaw: '5585991564729',
-  address: 'R. Prof. José Antônio de Queiroz, 1922 - Centro, Cascavel - CE, 62850-000',
+  address: 'R. Prof. José Antônio de Queiroz, 1972 - Centro, Cascavel - CE, 62850-000',
   shortAddress: 'Centro, Cascavel - CE',
-  hours: 'Segunda a Sexta: 09:00 - 19:00 | Sábado: 09:00 - 18:00 | Domingo: 08:00 - 12:00',
+  hours: 'Segunda a Sábado: 08:00 - 19:00 | Domingo: 08:00 - 12:00',
   hoursDetail: [
-    { days: 'Segunda-feira', time: '09:00 - 19:00', status: 'Aberto' },
-    { days: 'Terça-feira', time: '09:00 - 19:00', status: 'Aberto' },
-    { days: 'Quarta-feira', time: '09:00 - 19:00', status: 'Aberto' },
-    { days: 'Quinta-feira', time: '09:00 - 19:00', status: 'Aberto' },
-    { days: 'Sexta-feira', time: '09:00 - 19:00', status: 'Aberto' },
-    { days: 'Sábado', time: '09:00 - 18:00', status: 'Aberto' },
+    { days: 'Segunda-feira', time: '08:00 - 19:00', status: 'Aberto' },
+    { days: 'Terça-feira', time: '08:00 - 19:00', status: 'Aberto' },
+    { days: 'Quarta-feira', time: '08:00 - 19:00', status: 'Aberto' },
+    { days: 'Quinta-feira', time: '08:00 - 19:00', status: 'Aberto' },
+    { days: 'Sexta-feira', time: '08:00 - 19:00', status: 'Aberto' },
+    { days: 'Sábado', time: '08:00 - 19:00', status: 'Aberto' },
     { days: 'Domingo', time: '08:00 - 12:00', status: 'Aberto' },
   ],
-  googleMapsUrl: 'https://maps.google.com/?q=R.+Prof.+Jos%C3%A9+Ant%C3%B4nio+de+Queiroz,+1922+-+Centro,+Cascavel+-+CE,+62850-000',
+  googleMapsUrl: 'https://maps.google.com/?q=R.+Prof.+Jos%C3%A9+Ant%C3%B4nio+de+Queiroz,+1972+-+Centro,+Cascavel+-+CE,+62850-000',
   instagram: '@barbearianavalha.ce',
 };
 
@@ -99,10 +99,10 @@ export const SERVICES: ServiceItem[] = [
     category: 'barba',
     price: 30,
     duration: '25 min',
-    description: 'Experiência completa com ritual de toalha quente para abertura dos poros, emoliência dos fios, alinhamento na navalha e lavagem facial com loção premium.',
+    description: 'Experiência completa com ritual de toalha aquecida para abertura dos poros, emoliência dos fios, alinhamento na navalha e lavagem facial com loção premium.',
     image: toalhaQuenteImg,
     features: [
-      'Ritual de toalha quente relaxante',
+      'Ritual de toalha aquecida relaxante',
       'Abertura dos poros e emoliência dos fios',
       'Alinhamento preciso na navalha descartável',
       'Lavagem facial e loção pós-barba premium'
@@ -131,11 +131,11 @@ export const SERVICES: ServiceItem[] = [
     category: 'combo',
     price: 60,
     duration: '55 min',
-    description: 'O pacote completo da barbearia: Corte Degradê navalhado + Barba com ritual de toalha quente + Lavagem capilar e facial com finalização de primeira.',
+    description: 'O pacote completo da barbearia: Corte Degradê navalhado + Barba com ritual de toalha aquecida + Lavagem capilar e facial com finalização de primeira.',
     image: comboPremiumImg,
     features: [
       'Corte degradê navalhado na zero',
-      'Barba com ritual de toalha quente',
+      'Barba com ritual de toalha aquecida',
       'Lavagem capilar e facial refrescante',
       'Finalização com produtos premium'
     ],
@@ -239,15 +239,15 @@ export const SERVICES: ServiceItem[] = [
 export const COMFORT_FEATURES: ComfortFeature[] = [
   {
     id: 'toalha-quente-lavagem',
-    title: 'Toalha Quente & Lavagem',
+    title: 'Toalha Aquecida & Lavagem',
     description: 'Ritual clássico que abre os poros e amacia os pelos da barba para um corte sem irritações, com lavagem capilar refrescante pós-corte para você sair pronto.',
-    highlight: 'Toalha Quente & Lavagem',
+    highlight: 'Toalha Aquecida & Lavagem',
     image: toalhaQuenteImg
   },
   {
     id: 'preco-justo',
-    title: 'Preço Justo de Verdade',
-    description: 'Valores acessíveis e transparentes para você manter o visual sempre alinhado no seu dia a dia, sem surpresas.',
+    title: 'Preço Acessível e Atendimento Individual',
+    description: 'Valores acessíveis e atendimento individualizado para você manter o visual sempre alinhado no seu dia a dia, sem surpresas.',
     highlight: 'Preço Acessível',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80'
   },
@@ -275,8 +275,8 @@ export const BARBER_TIPS = [
   },
   {
     step: '02',
-    title: 'Toalha Quente no Barbear',
-    desc: 'O vapor da toalha quente abre os poros e amacia a haste do pelo, prevenindo foliculite e proporcionando um barbear suave na navalha.',
+    title: 'Toalha Aquecida no Barbear',
+    desc: 'O vapor da toalha aquecida abre os poros e amacia a haste do pelo, prevenindo foliculite e proporcionando um barbear suave na navalha.',
   },
   {
     step: '03',
@@ -367,5 +367,6 @@ export const TIME_SLOTS = [
   '17:00',
   '17:30',
   '18:00',
-  '18:30'
+  '18:30',
+  '19:00'
 ];

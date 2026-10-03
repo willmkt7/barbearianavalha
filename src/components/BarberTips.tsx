@@ -132,10 +132,10 @@ export const BarberTips: React.FC<BarberTipsProps> = ({ onOpenBooking }) => {
                 </span>
                 <div>
                   <h4 className="font-['Bebas_Neue'] text-xl tracking-wider text-white uppercase">
-                    ESTAMOS ABERTOS • SEGUNDA A SÁBADO
+                    ESTAMOS ABERTOS • SEG A SÁB (08H ÀS 19H) E DOM (08H ÀS 12H)
                   </h4>
                   <p className="text-xs text-zinc-400">
-                    Atendimento ágil, lâminas descartáveis e preço justo no Centro de Cascavel.
+                    Lâminas descartáveis, preço acessível e atendimento individual no Centro de Cascavel.
                   </p>
                 </div>
               </div>

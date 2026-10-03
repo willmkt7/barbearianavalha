@@ -124,7 +124,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               </p>
               <p className="flex items-start space-x-2 text-zinc-400">
                 <Clock className="w-4 h-4 text-[#1E3A8A] flex-shrink-0 mt-0.5" />
-                <span>Seg a Sex: 09:00 - 19:00 • Sáb: 09:00 - 18:00 • Dom: 08:00 - 12:00</span>
+                <span>Seg a Sáb: 08:00 - 19:00 • Dom: 08:00 - 12:00</span>
               </p>
 
               <button

@@ -43,19 +43,19 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#121622] border border-[#F5E6C8]/25 mb-4">
             <Scissors className="w-3.5 h-3.5 text-[#E31837]" />
             <span className="text-xs font-['Bebas_Neue'] tracking-[0.2em] uppercase text-[#F5E6C8]">
-              TABELA OFICIAL DE SERVIÇOS & VALORES
+              TABELA DE SERVIÇOS
             </span>
           </div>
 
           <h2 className="font-['Bebas_Neue'] text-4xl sm:text-5xl lg:text-6xl text-white tracking-wider uppercase leading-none mb-2">
-            DO CLÁSSICO AO{' '}
+            DO TRADICIONAL AO{' '}
             <span className="text-[#F5E6C8] font-['Alex_Brush'] text-5xl sm:text-6xl lg:text-7xl normal-case block sm:inline">
               moderno
             </span>
           </h2>
 
           <p className="font-['Raleway'] text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto mt-2 leading-relaxed">
-            Tabela completa com cortes simples e premium, barba com toalha quente, combos econômicos, sobrancelhas, luzes e hidratação capilar.
+            Tabela completa com cortes simples e premium, barba com toalha aquecida, combos econômicos, sobrancelhas, luzes e hidratação capilar.
           </p>
 
           {/* Filter Pills */}
@@ -178,7 +178,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
                 COMBINE SERVIÇOS & GANHE TEMPO
               </h4>
               <p className="text-xs text-zinc-400 font-['Raleway']">
-                Faça cabelo, barba e sobrancelha no mesmo horário com atendimento pontual e toalha quente cortesia.
+                Faça cabelo, barba e sobrancelha no mesmo horário com atendimento pontual e toalha aquecida cortesia.
               </p>
             </div>
           </div>

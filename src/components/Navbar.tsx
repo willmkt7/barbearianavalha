@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </span>
             <span className="flex items-center space-x-1.5 text-[#F5E6C8] font-['Raleway']">
               <Clock className="w-3.5 h-3.5 text-[#1E3A8A]" />
-              <span>Seg a Sex: 09h às 19h • Sáb: 09h às 18h • Dom: 08h às 12h</span>
+              <span>Seg a Sáb: 08h às 19h • Dom: 08h às 12h</span>
             </span>
           </div>
 
@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <div className="flex items-center space-x-1.5">
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <span className="text-[#F5E6C8] font-['Bebas_Neue'] text-sm tracking-wider">
-                ESTAMOS ABERTOS HOJE
+                ESTAMOS FUNCIONANDO HOJE
               </span>
             </div>
             <a
@@ -98,12 +98,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <div>
                 <div className="flex items-center space-x-1.5">
                   <span className="font-['Bebas_Neue'] text-3xl tracking-widest text-white uppercase leading-none">
-                    NAVALHA
+                    BARBEARIA NAVALHA
                   </span>
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#E31837]" />
                 </div>
                 <p className="text-[10px] tracking-[0.25em] text-[#F5E6C8] uppercase font-['Bebas_Neue']">
-                  PREÇO JUSTO & CORTE NA RÉGUA
+                  TRADIÇÃO, ESTILO E ATITUDE.
                 </p>
               </div>
             </a>

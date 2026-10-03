@@ -130,7 +130,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
       `*Valor Total:* R$ ${totalPrice},00%0A` +
       `*Duração Estimada:* ~${totalMinutes} min%0A` +
       (hasBeardOrHair
-        ? `*Toalha Quente & Lavagem:* Inclusa no atendimento%0A`
+        ? `*Toalha Aquecida & Lavagem:* Inclusa no atendimento%0A`
         : '') +
       `*Data:* ${encodeURIComponent(formattedDate)}%0A` +
       `*Horário pretendido:* ${encodeURIComponent(selectedTime)}%0A` +
@@ -160,10 +160,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
           </div>
 
           <h2 className="font-['Bebas_Neue'] text-4xl sm:text-5xl lg:text-6xl text-white tracking-wider uppercase leading-none mb-2">
-            AGENDE SEU HORÁRIO •{' '}
-            <span className="text-[#F5E6C8] font-['Alex_Brush'] text-5xl sm:text-6xl lg:text-7xl normal-case block sm:inline">
-              corte na régua
-            </span>
+            AGENDE SEU HORÁRIO
           </h2>
 
           <p className="font-['Raleway'] text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto leading-relaxed">
@@ -285,7 +282,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                         { id: 'todos', label: 'Todos' },
                         { id: 'manha', label: 'Manhã (08h-11h30)' },
                         { id: 'tarde', label: 'Tarde (12h-16h30)' },
-                        { id: 'noite', label: 'Fim de Tarde (17h-18h30)' },
+                        { id: 'noite', label: 'Fim de Tarde (17h-19h)' },
                       ].map((p) => (
                         <button
                           type="button"
@@ -429,7 +426,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                 <span className="text-zinc-400">Atendimento:</span>
                 <span className="text-zinc-200 font-semibold flex items-center space-x-1">
                   <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>{hasBeardOrHair ? 'Toalha Quente • Lavagem' : 'Sem Fila • Lâmina Nova'}</span>
+                  <span>{hasBeardOrHair ? 'Toalha Aquecida • Lavagem' : 'Sem Fila • Lâmina Nova'}</span>
                 </span>
               </div>
 

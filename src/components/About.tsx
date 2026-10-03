@@ -30,13 +30,13 @@ export const About: React.FC = () => {
             <h2 className="font-['Bebas_Neue'] text-4xl sm:text-5xl lg:text-6xl text-white tracking-wider uppercase leading-none mb-3">
               CORTE NA RÉGUA,{' '}
               <span className="text-[#F5E6C8] font-['Alex_Brush'] text-5xl sm:text-6xl lg:text-7xl normal-case block sm:inline">
-                preço justo
+                preço acessível e atendimento individual
               </span>
             </h2>
 
             <div className="space-y-3.5 font-['Raleway'] text-zinc-300 text-sm sm:text-base leading-relaxed">
               <p>
-                A <strong className="text-white font-semibold">Barbearia Navalha</strong> é um espaço novo no Centro de Cascavel - CE, pensado para quem quer cortar o cabelo e fazer a barba com capricho e gastando o valor justo.
+                A <strong className="text-white font-semibold">Barbearia Navalha</strong> é um espaço novo no Centro de Cascavel - CE, pensado para quem quer cortar o cabelo e fazer a barba com capricho, preço acessível e atendimento individual.
               </p>
               <p className="text-zinc-400">
                 Nosso trabalho é direto e bem feito: degradê na zero bem disfarçado, corte social alinhado, barba desenhada na navalha, sobrancelha e platinado. Atendemos com técnica e atenção ao que você pede.
@@ -64,10 +64,10 @@ export const About: React.FC = () => {
                 <Sparkles className="w-5 h-5 text-[#F5E6C8] flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-['Bebas_Neue'] text-lg uppercase text-white tracking-wide">
-                    Toalha Quente & Lavagem
+                    Toalha Aquecida & Lavagem
                   </h4>
                   <p className="text-xs text-zinc-400 font-['Raleway']">
-                    Ritual com toalha quente relaxante para abrir os poros e lavagem refrescante para sair pronto.
+                    Ritual com toalha aquecida relaxante para abrir os poros e lavagem refrescante para sair pronto.
                   </p>
                 </div>
               </div>
