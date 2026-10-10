@@ -56,9 +56,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 <a href="#servicos" className="hover:text-white transition-colors">Serviços & Preços</a>
               </li>
               <li>
-                <a href="#dicas" className="hover:text-white transition-colors">Dicas de Barba</a>
-              </li>
-              <li>
                 <a href="#sobre" className="hover:text-white transition-colors">Sobre a Barbearia</a>
               </li>
               <li>

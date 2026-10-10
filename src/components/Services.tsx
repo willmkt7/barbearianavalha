@@ -136,19 +136,9 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
                   </div>
 
                   {/* Description */}
-                  <p className="text-xs sm:text-sm text-zinc-400 font-['Raleway'] leading-relaxed mb-5">
+                  <p className="text-xs sm:text-sm text-zinc-400 font-['Raleway'] leading-relaxed">
                     {service.description}
                   </p>
-
-                  {/* Feature Bullets */}
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-start space-x-2 text-xs text-zinc-300 font-['Raleway']">
-                        <Check className="w-3.5 h-3.5 text-[#E31837] flex-shrink-0 mt-0.5" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
 

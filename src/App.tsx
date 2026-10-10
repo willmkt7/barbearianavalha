@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
-import { BarberTips } from './components/BarberTips';
 import { About } from './components/About';
 import { Gallery } from './components/Gallery';
 import { BookingSection } from './components/BookingSection';
@@ -49,7 +48,7 @@ export default function App() {
 
       {/* Main Content Sections */}
       <main className="flex-1">
-        {/* 1. Início / Hero: "COMECE A SEMANA EM NOVO ESTILO" */}
+        {/* 1. Início / Hero */}
         <Hero
           onOpenBooking={() => handleOpenBooking()}
           onExploreServices={handleExploreServices}
@@ -61,21 +60,16 @@ export default function App() {
           onOpenBooking={() => handleOpenBooking()}
         />
 
-        {/* 3. Dicas de Bancada: Dicas para ter uma barba perfeita (Inspirado no pôster de referência) */}
-        <div id="dicas">
-          <BarberTips onOpenBooking={() => handleOpenBooking()} />
-        </div>
-
-        {/* 4. Sobre Nós: O Atendimento que Você Merece & Barbeiros */}
+        {/* 3. Sobre Nós: O Atendimento que Você Merece & Barbeiros */}
         <About />
 
-        {/* 5. Galeria de Estilos & Acabamentos */}
+        {/* 4. Galeria de Estilos & Acabamentos */}
         <Gallery onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 6. Agendamento de Horário Interativo */}
+        {/* 5. Agendamento de Horário Interativo */}
         <BookingSection preselectedService={selectedService} />
 
-        {/* 7. Onde Estamos Localizados? / Contato Oficial Cascavel - CE */}
+        {/* 6. Onde Estamos Localizados? / Contato Oficial Cascavel - CE */}
         <Contact />
       </main>
 

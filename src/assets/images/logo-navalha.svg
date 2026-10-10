@@ -1,57 +1,16 @@
-<svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="navalhaBlue" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#2F60E8" />
-      <stop offset="65%" stop-color="#204EC8" />
-      <stop offset="100%" stop-color="#17399B" />
-    </radialGradient>
-    <filter id="razorShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#091432" flood-opacity="0.45" />
-    </filter>
-  </defs>
-
-  <!-- Outer Dark Circle -->
-  <circle cx="250" cy="250" r="236" fill="#090d18" stroke="#1b233a" stroke-width="4" />
-
-  <!-- Main Royal Blue Circle -->
-  <circle cx="250" cy="250" r="222" fill="url(#navalhaBlue)" stroke="#0b1122" stroke-width="14" />
-
-  <!-- Razor Artwork -->
-  <g filter="url(#razorShadow)">
-    <!-- Left Arm: Blade & Shank -->
-    <path
-      d="M 238 162 L 214 246 L 229 250 L 204 350 C 194 390, 142 414, 126 376 C 112 342, 144 300, 168 250 L 220 148 Z"
-      fill="#FFFFFF"
-      stroke="#0D111A"
-      stroke-width="15"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-    />
-
-    <!-- Notch / Step detail on inner blade edge -->
-    <path d="M 216 238 L 230 242 L 220 280 L 206 276 Z" fill="#0D111A" />
-
-    <!-- Tang / Hook (Espiga curva no topo) -->
-    <path
-      d="M 242 165 C 246 142, 256 122, 270 112 C 278 106, 286 112, 282 124 C 274 146, 262 166, 252 182 Z"
-      fill="#FFFFFF"
-      stroke="#0D111A"
-      stroke-width="14"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-    />
-
-    <!-- Right Arm: Handle (Cabo do navalhete) -->
-    <path
-      d="M 228 152 C 242 142, 258 144, 268 158 L 348 316 C 368 356, 372 388, 350 414 C 328 436, 298 424, 284 386 L 222 178 Z"
-      fill="#FFFFFF"
-      stroke="#0D111A"
-      stroke-width="15"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-    />
-
-    <!-- Pivot Pin / Rivet -->
-    <circle cx="248" cy="172" r="9" fill="#0D111A" />
-  </g>
+<svg viewBox="70 62 876 876" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="508" cy="500" r="414" fill="#0037B3" stroke="#000000" stroke-width="24" />
+  <path
+    d="M 428 274 C 418 238, 448 198, 488 208 C 493 209, 496 212, 498 214 C 502 194, 502 174, 502 156 C 502 118, 568 118, 570 160 C 572 200, 560 238, 544 268 C 602 358, 662 482, 712 622 C 728 668, 740 708, 746 734 C 758 782, 718 818, 672 812 C 632 806, 610 780, 600 746 C 566 632, 532 500, 495 368 C 480 388, 466 408, 456 426 L 478 442 C 488 450, 490 460, 484 476 L 380 738 C 370 766, 348 778, 320 770 L 280 756 C 250 744, 238 718, 250 688 C 288 596, 328 502, 368 412 C 390 368, 414 328, 436 292 Z"
+    fill="#000000"
+  />
+  <path
+    d="M 461 304 C 436 344, 412 384, 392 424 C 352 512, 312 606, 276 696 C 271 710, 277 722, 292 728 L 324 741 C 339 747, 349 741, 355 726 L 456 466 C 458 460, 456 456, 450 451 L 431 437 C 425 432, 425 426, 429 417 C 444 388, 462 362, 481 340 Z"
+    fill="#FFFFFF"
+  />
+  <path
+    d="M 454 264 C 446 244, 462 226, 482 234 C 490 237, 495 242, 498 246 C 510 224, 520 192, 521 158 C 521 142, 545 142, 545 160 C 545 196, 534 236, 516 268 C 568 348, 628 468, 678 608 C 696 658, 710 702, 718 730 C 726 760, 702 784, 674 780 C 648 776, 634 758, 626 734 C 578 584, 522 422, 454 264 Z"
+    fill="#FFFFFF"
+  />
+  <circle cx="489" cy="280" r="8.5" fill="#000000" />
 </svg>

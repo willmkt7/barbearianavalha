@@ -53,13 +53,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'cabelo',
     price: 30,
     duration: '30 min',
-    description: 'Corte tradicional social ou militar com máquina e tesoura, alinhamento dos contornos e acabamento limpo na navalha.',
+    description: 'Corte social ou tradicional na máquina e tesoura com acabamento na navalha.',
     image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80',
-    features: [
-      'Corte na tesoura e máquina',
-      'Acabamento limpo do contorno',
-      'Lâmina nova descartável'
-    ],
+    features: [],
     isPopular: false
   },
   {
@@ -68,14 +64,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'cabelo',
     price: 40,
     duration: '40 min',
-    description: 'Degradê na zero milimétrico (Skin Fade / Taper Fade), navalhado fino, lavagem capilar refrescante e finalização com pomada.',
+    description: 'Degradê navalhado, lavagem capilar e finalização com pomada.',
     image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80',
-    features: [
-      'Degradê milimétrico navalhado na zero',
-      'Lavagem capilar e higienização refrescante',
-      'Acabamento minucioso na navalha',
-      'Finalização com pomada modeladora'
-    ],
+    features: [],
     isPopular: true
   },
   {
@@ -84,13 +75,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'barba',
     price: 25,
     duration: '20 min',
-    description: 'Alinhamento rápido e desenho das linhas da bochecha e pescoço com navalhete esterilizado, lâmina descartável e loção calmante.',
+    description: 'Alinhamento e desenho da barba na navalha com loção pós-barba.',
     image: barbaSimplesImg,
-    features: [
-      'Desenho na navalha descartável',
-      'Alinhamento de bochechas e pescoço',
-      'Loção pós-barba refrescante'
-    ],
+    features: [],
     isPopular: false
   },
   {
@@ -99,14 +86,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'barba',
     price: 30,
     duration: '25 min',
-    description: 'Experiência completa com ritual de toalha aquecida para abertura dos poros, emoliência dos fios, alinhamento na navalha e lavagem facial com loção premium.',
+    description: 'Barba alinhada na navalha com toalha aquecida e lavagem facial.',
     image: toalhaQuenteImg,
-    features: [
-      'Ritual de toalha aquecida relaxante',
-      'Abertura dos poros e emoliência dos fios',
-      'Alinhamento preciso na navalha descartável',
-      'Lavagem facial e loção pós-barba premium'
-    ],
+    features: [],
     isPopular: true
   },
   {
@@ -115,14 +97,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'combo',
     price: 50,
     duration: '45 min',
-    description: 'Corte social clássico somado ao alinhamento da barba na navalha. O pacote ideal e econômico para manter o visual em dia.',
+    description: 'Corte simples + barba alinhada na navalha.',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80',
-    features: [
-      'Corte simples alinhado',
-      'Barba alinhada na navalha',
-      'Lâminas novas descartáveis',
-      'Economia e praticidade no atendimento'
-    ],
+    features: [],
     isPopular: true
   },
   {
@@ -131,14 +108,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'combo',
     price: 60,
     duration: '55 min',
-    description: 'O pacote completo da barbearia: Corte Degradê navalhado + Barba com ritual de toalha aquecida + Lavagem capilar e facial com finalização de primeira.',
+    description: 'Corte degradê + barba com toalha aquecida e lavagem completa.',
     image: comboPremiumImg,
-    features: [
-      'Corte degradê navalhado na zero',
-      'Barba com ritual de toalha aquecida',
-      'Lavagem capilar e facial refrescante',
-      'Finalização com produtos premium'
-    ],
+    features: [],
     isPopular: true
   },
   {
@@ -147,13 +119,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'sobrancelha',
     price: 10,
     duration: '10 min',
-    description: 'Limpeza e desenho na navalha afiada, removendo excessos no centro e arco sem afinar ou perder o traço masculino natural.',
+    description: 'Limpeza e alinhamento natural na navalha.',
     image: sobrancelhaImg,
-    features: [
-      'Desenho e alinhamento na navalha',
-      'Remoção de excessos no arco e centro',
-      'Preservação da expressão natural masculina'
-    ],
+    features: [],
     isPopular: true
   },
   {
@@ -162,14 +130,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'luzes',
     price: 120,
     duration: '1h 40min',
-    description: 'Luzes puxadas na touca com distribuição uniforme dos fios, clareamento homogêneo e matização para tom platinado ou pérola. Valor a partir de R$ 120.',
+    description: 'Luzes na touca com clareamento uniforme e matização inclusa.',
     image: luzesImg,
-    features: [
-      'Puxado na touca com distribuição homogênea',
-      'Descoloração com proteção da fibra',
-      'Matização anti-amarelamento inclusa',
-      'A partir de R$ 120 (conforme comprimento)'
-    ],
+    features: [],
     isPopular: false
   },
   {
@@ -178,14 +141,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'luzes',
     price: 150,
     duration: '2h',
-    description: 'Descoloração global completa para o famoso branco gelo / nevou uniforme, com produto protetor e matização fria profissional. Valor a partir de R$ 150.',
+    description: 'Descoloração global ("nevou") com proteção capilar e matização.',
     image: nevouImg,
-    features: [
-      'Platinado global uniforme ("nevou")',
-      'Descoloração com proteção da fibra capilar',
-      'Matização fria profissional inclusa',
-      'A partir de R$ 150 (conforme comprimento e volume)'
-    ],
+    features: [],
     isPopular: true
   },
   {
@@ -194,13 +152,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'tratamento',
     price: 20,
     duration: '20 min',
-    description: 'Tratamento profundo para reposição de umidade, brilho e maciez dos fios ressecados pelo sol e rotina diária.',
+    description: 'Reposição de brilho, maciez e nutrição para os fios.',
     image: hidratacaoImg,
-    features: [
-      'Máscara capilar nutritiva profunda',
-      'Recuperação de maciez e brilho',
-      'Massagem no couro cabeludo e enxágue'
-    ],
+    features: [],
     isPopular: false
   },
   {
@@ -209,13 +163,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'tratamento',
     price: 30,
     duration: '20 min',
-    description: 'Aplicação de pigmentos neutralizadores para eliminar o tom amarelado e alaranjado de cabelos com luzes, reflexos ou grisalhos.',
+    description: 'Neutralização do tom amarelado para realçar o platinado ou grisalho.',
     image: matizacaoImg,
-    features: [
-      'Neutralização de tons amarelados',
-      'Realce do tom platinado e acinzentado',
-      'Devolve o aspecto de cabelo recém-feito'
-    ],
+    features: [],
     isPopular: false
   },
   {
@@ -224,14 +174,9 @@ export const SERVICES: ServiceItem[] = [
     category: 'tratamento',
     price: 40,
     duration: '35 min',
-    description: 'Combo de tratamento: nutrição profunda da fibra capilar com neutralização total dos tons quentes para um loiro ou platinado impecável e saudável.',
+    description: 'Nutrição profunda combinada com neutralização dos tons amarelados.',
     image: hidrataMatizaImg,
-    features: [
-      'Duplo benefício: cor fria + fios nutridos',
-      'Elimina o amarelado indesejado',
-      'Repõe a sedosidade e maciez pós-química',
-      'Finalização alinhada'
-    ],
+    features: [],
     isPopular: true
   }
 ];

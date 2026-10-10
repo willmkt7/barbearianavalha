@@ -130,7 +130,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
               className="pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-3.5 text-xs font-['Oswald'] uppercase tracking-wider text-zinc-300"
             >
               <div className="flex items-center space-x-2">
-                <CheckCircle2 className="w-4 h-4 text-[#E31837] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-blue-500 flex-shrink-0" />
                 <span>TOALHA AQUECIDA E LAVAGEM</span>
               </div>
               <div className="flex items-center space-x-2">
