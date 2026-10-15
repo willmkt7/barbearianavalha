@@ -27,7 +27,7 @@ export const BUSINESS_INFO = {
   name: 'Barbearia Navalha',
   tagline: 'Barbearia Local • Preço Acessível e Atendimento Individual',
   headline: 'Corte de qualidade, preço acessível e atendimento individual.',
-  subheadline: 'Cascavel - CE • A sua barbearia no Centro de Cascavel. Espaço novo, lâminas descartáveis, atendimento pontual e valores acessíveis para você manter o visual sempre em dia.',
+  subheadline: 'Sua barbearia no Centro de Cascavel - Ce. Nossos profissionais barbeiros estão prontos pra te atender com maquinário profissional, ambiente limpo, organizado e climatizado, vagas para estacionar o carro disponíveis, atendemos por agendamento e ordem de chegada.',
   phoneFormatted: '(85) 99156-4729',
   phoneRaw: '5585991564729',
   address: 'R. Prof. José Antônio de Queiroz, 1972 - Centro, Cascavel - CE, 62850-000',
@@ -53,7 +53,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'cabelo',
     price: 30,
     duration: '30 min',
-    description: 'Corte social ou tradicional na máquina e tesoura com acabamento na navalha.',
+    description: 'Qualquer estilo de corte de cabelo, degradê, social ou todo na tesoura, sem lavagem.',
     image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80',
     features: [],
     isPopular: false
@@ -64,7 +64,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'cabelo',
     price: 40,
     duration: '40 min',
-    description: 'Degradê navalhado, lavagem capilar e finalização com pomada.',
+    description: 'Qualquer estilo de corte de cabelo, degradê, social ou todo na tesoura, com lavagem inclusa, saia da barbearia com o cabelo limpo e bem arrumado.',
     image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80',
     features: [],
     isPopular: true
@@ -75,7 +75,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'barba',
     price: 25,
     duration: '20 min',
-    description: 'Alinhamento e desenho da barba na navalha com loção pós-barba.',
+    description: 'Qualquer estilo de barba, tirar a barba toda ou apenas modelar, com máquina e navalha.',
     image: barbaSimplesImg,
     features: [],
     isPopular: false
@@ -86,7 +86,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'barba',
     price: 30,
     duration: '25 min',
-    description: 'Barba alinhada na navalha com toalha aquecida e lavagem facial.',
+    description: 'Qualquer estilo de barba, tirar a barba toda ou apenas modelar, com máquina, tesoura, navalha, e toalha aquecida para proporcionar uma experiência mais relaxante e confortável na hora do barbear.',
     image: toalhaQuenteImg,
     features: [],
     isPopular: true
@@ -97,7 +97,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'combo',
     price: 50,
     duration: '45 min',
-    description: 'Corte simples + barba alinhada na navalha.',
+    description: 'Corte Simples + Barba Simples',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80',
     features: [],
     isPopular: true
@@ -108,7 +108,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'combo',
     price: 60,
     duration: '55 min',
-    description: 'Corte degradê + barba com toalha aquecida e lavagem completa.',
+    description: 'Corte Premium + Barba Premium',
     image: comboPremiumImg,
     features: [],
     isPopular: true
@@ -119,7 +119,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'sobrancelha',
     price: 10,
     duration: '10 min',
-    description: 'Limpeza e alinhamento natural na navalha.',
+    description: 'Limpeza da sobrancelha na navalha, tirando pelos rebeldes e definindo o design natural.',
     image: sobrancelhaImg,
     features: [],
     isPopular: true
@@ -130,7 +130,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'luzes',
     price: 120,
     duration: '1h 40min',
-    description: 'Luzes na touca com clareamento uniforme e matização inclusa.',
+    description: 'Corte de cabelo + Luzes + Hidratação + Matização',
     image: luzesImg,
     features: [],
     isPopular: false
@@ -141,7 +141,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'luzes',
     price: 150,
     duration: '2h',
-    description: 'Descoloração global ("nevou") com proteção capilar e matização.',
+    description: 'Corte de cabelo + Descoloração global + Hidratação + Matização',
     image: nevouImg,
     features: [],
     isPopular: true
@@ -163,7 +163,7 @@ export const SERVICES: ServiceItem[] = [
     category: 'tratamento',
     price: 30,
     duration: '20 min',
-    description: 'Neutralização do tom amarelado para realçar o platinado ou grisalho.',
+    description: 'Neutralização de tons amarelados para realçar o platinado ou grisalho.',
     image: matizacaoImg,
     features: [],
     isPopular: false

@@ -47,16 +47,12 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
             </span>
           </div>
 
-          <h2 className="font-['Bebas_Neue'] text-4xl sm:text-5xl lg:text-6xl text-white tracking-wider uppercase leading-none mb-2">
+          <h2 className="font-['Bebas_Neue'] text-4xl sm:text-5xl lg:text-6xl text-white tracking-wider uppercase leading-none mb-6">
             DO TRADICIONAL AO{' '}
             <span className="text-[#F5E6C8] font-['Alex_Brush'] text-5xl sm:text-6xl lg:text-7xl normal-case block sm:inline">
               moderno
             </span>
           </h2>
-
-          <p className="font-['Raleway'] text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto mt-2 leading-relaxed">
-            Tabela completa com cortes simples e premium, barba com toalha aquecida, combos econômicos, sobrancelhas, luzes e hidratação capilar.
-          </p>
 
           {/* Filter Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
@@ -113,12 +109,6 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
                       <span>MAIS PEDIDO</span>
                     </div>
                   )}
-
-                  {/* Time Badge */}
-                  <div className="absolute bottom-3 left-4 flex items-center space-x-1.5 text-xs text-zinc-300 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded border border-white/10">
-                    <Clock className="w-3.5 h-3.5 text-[#ff4765]" />
-                    <span className="font-['Oswald'] tracking-wider">{service.duration}</span>
-                  </div>
                 </div>
 
                 {/* Service Details */}

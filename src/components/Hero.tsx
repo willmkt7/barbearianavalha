@@ -99,7 +99,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
               variants={itemVariants}
               className="text-sm sm:text-base text-zinc-300 leading-relaxed font-['Raleway'] max-w-2xl mb-8"
             >
-              Sua barbearia no Centro de Cascavel - CE. Cortes simples e premium, barba com toalha aquecida, combos completos, sobrancelhas, luzes e hidratação. Atendimento pontual, lâminas 100% descartáveis e valores acessíveis para você manter o visual sempre em dia.
+              Sua barbearia no Centro de Cascavel - Ce. Nossos profissionais barbeiros estão prontos pra te atender com maquinário profissional, ambiente limpo, organizado e climatizado, vagas para estacionar o carro disponíveis, atendemos por agendamento e ordem de chegada.
             </motion.p>
 
             {/* CTAs */}
@@ -173,8 +173,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
                 {/* Official Logo Showcase */}
                 <div className="flex flex-col items-center justify-center py-5 px-4 mb-5 rounded-xl bg-gradient-to-b from-[#131b2f]/60 to-[#0e1320]/40 border border-white/5">
                   <div className="relative group cursor-pointer">
-                    <div className="absolute inset-0 bg-blue-600/20 rounded-full blur-xl group-hover:bg-blue-600/35 transition-all duration-500" />
-                    <NavalhaLogo className="relative w-28 h-28 drop-shadow-[0_8px_25px_rgba(32,82,205,0.45)] group-hover:scale-105 transition-transform duration-300" />
+                    <NavalhaLogo className="relative w-28 h-28 drop-shadow-xl group-hover:scale-105 transition-transform duration-300" />
                   </div>
                   <span className="font-['Bebas_Neue'] text-sm tracking-[0.2em] text-[#F5E6C8] uppercase mt-3">
                     Barbearia Navalha

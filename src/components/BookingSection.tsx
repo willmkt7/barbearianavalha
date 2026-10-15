@@ -81,11 +81,6 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
   const selectedServices = SERVICES.filter((s) => selectedServiceIds.includes(s.id));
   const totalPrice = selectedServices.reduce((acc, s) => acc + s.price, 0);
 
-  const totalMinutes = selectedServices.reduce((acc, s) => {
-    const match = s.duration.match(/(\d+)/);
-    return acc + (match ? parseInt(match[1], 10) : 30);
-  }, 0);
-
   const hasBeardOrHair = selectedServices.some(
     (s) => s.category === 'barba' || s.category === 'cabelo' || s.category === 'combo'
   );
@@ -128,7 +123,6 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
       (customerPhone ? `*Telefone:* ${encodeURIComponent(customerPhone.trim())}%0A` : '') +
       `*Serviços Selecionados (${selectedServices.length}):*%0A${servicesListText}%0A%0A` +
       `*Valor Total:* R$ ${totalPrice},00%0A` +
-      `*Duração Estimada:* ~${totalMinutes} min%0A` +
       (hasBeardOrHair
         ? `*Toalha Aquecida & Lavagem:* Inclusa no atendimento%0A`
         : '') +
@@ -212,9 +206,6 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                           <div>
                             <p className="font-['Bebas_Neue'] text-lg text-white tracking-wide leading-snug">
                               {srv.name}
-                            </p>
-                            <p className="text-xs text-zinc-400 font-['Raleway']">
-                              {srv.duration}
                             </p>
                           </div>
                         </div>
@@ -405,7 +396,6 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                     <div key={srv.id} className="flex justify-between items-center text-xs bg-[#10141e] border border-white/5 px-3 py-2 rounded-lg">
                       <div>
                         <p className="font-bold text-white font-['Raleway'] leading-tight">{srv.name}</p>
-                        <p className="text-[10px] text-zinc-400 font-['Oswald']">{srv.duration}</p>
                       </div>
                       <span className="font-['Bebas_Neue'] text-base text-[#F5E6C8] flex-shrink-0">
                         R$ {srv.price},00
@@ -413,13 +403,6 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                     </div>
                   ))}
                 </div>
-              </div>
-
-              <div className="flex justify-between items-center pt-1">
-                <span className="text-zinc-400">Duração estimada total:</span>
-                <span className="text-zinc-300 font-semibold font-['Oswald'] tracking-wider">
-                  ~{totalMinutes} min
-                </span>
               </div>
 
               <div className="flex justify-between items-center">
