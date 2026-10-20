@@ -9,7 +9,7 @@ import matizacaoImg from '../assets/images/matizacao_violeta_1790879821311.jpg';
 import hidrataMatizaImg from '../assets/images/cabelo_platinado_sedoso_1790879835342.jpg';
 import comboPremiumImg from '../assets/images/combo_cabelo_barba_1790879854927.jpg';
 import barbaSimplesImg from '../assets/images/barba_simples_navalha_1790879870229.jpg';
-const salaoNavalhaImg = '/images/foto_real_barbearia.jpg';
+const salaoNavalhaImg = '/assets/aistudio/WhatsApp_Image_2026-10-16_at_17.18.42_8d90a401.jpeg';
 
 export {
   bigodeImg,
