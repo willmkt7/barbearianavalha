@@ -409,7 +409,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                 <span className="text-zinc-400">Atendimento:</span>
                 <span className="text-zinc-200 font-semibold flex items-center space-x-1">
                   <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>{hasBeardOrHair ? 'Toalha Aquecida • Lavagem' : 'Sem Fila • Lâmina Nova'}</span>
+                  <span>{hasBeardOrHair ? 'Toalha Aquecida • Lavagem' : 'Ambiente Climatizado • Lâmina Nova'}</span>
                 </span>
               </div>
 

@@ -49,7 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <div className="flex items-center space-x-6">
             <span className="flex items-center space-x-1.5 text-zinc-300 font-['Raleway']">
               <MapPin className="w-3.5 h-3.5 text-[#E31837]" />
-              <span>{BUSINESS_INFO.address}</span>
+              <span>{BUSINESS_INFO.shortAddress}</span>
             </span>
             <span className="flex items-center space-x-1.5 text-[#F5E6C8] font-['Raleway']">
               <Clock className="w-3.5 h-3.5 text-[#1E3A8A]" />

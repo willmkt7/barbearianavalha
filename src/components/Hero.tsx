@@ -189,10 +189,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreServices }) 
                     <MapPin className="w-4 h-4 text-[#E31837] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-['Bebas_Neue'] text-base text-white tracking-wider uppercase">
-                        ONDE ESTAMOS LOCALIZADOS?
+                        LOCALIZAÇÃO
                       </p>
                       <p className="text-zinc-400 text-xs leading-relaxed mt-1">
-                        {BUSINESS_INFO.address}
+                        Centro de Cascavel - CE
                       </p>
                     </div>
                   </div>

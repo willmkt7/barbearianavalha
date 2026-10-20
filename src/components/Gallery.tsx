@@ -84,7 +84,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onOpenBooking }) => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-[0.85] contrast-[1.15]"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                   onError={(e) => {

@@ -90,7 +90,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
                   <img
                     src={service.image}
                     alt={service.name}
-                    className="w-full h-full object-cover filter brightness-[0.8] contrast-[1.15] transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
@@ -158,7 +158,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService, onOpenBooki
                 COMBINE SERVIÇOS & GANHE TEMPO
               </h4>
               <p className="text-xs text-zinc-400 font-['Raleway']">
-                Faça cabelo, barba e sobrancelha no mesmo horário com atendimento pontual e toalha aquecida cortesia.
+                Faça cabelo, barba e sobrancelha no mesmo horário com toalha aquecida cortesia e atendimento de qualidade.
               </p>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Award, ShieldCheck, Clock, Scissors, Tag, CheckCircle, Sparkles } from 'lucide-react';
 import { COMFORT_FEATURES, BUSINESS_INFO } from '../data/barberData';
+import salaoNavalhaImg from '../assets/images/foto_barbearia.jpg';
 
 export const About: React.FC = () => {
   return (
@@ -42,7 +43,7 @@ export const About: React.FC = () => {
                 Nosso trabalho é direto e bem feito: degradê na zero bem disfarçado, corte social alinhado, barba desenhada na navalha, sobrancelha e platinado. Atendemos com técnica e atenção ao que você pede.
               </p>
               <p className="text-zinc-400">
-                Sem enrolação e sem fila demorada: você agenda o seu horário com praticidade pelo WhatsApp ou pelo site, chega e é atendido na hora.
+                Atendimento com praticidade: você pode agendar seu horário com facilidade pelo WhatsApp ou ser atendido por ordem de chegada com total conforto.
               </p>
             </div>
 
@@ -76,10 +77,10 @@ export const About: React.FC = () => {
                 <Clock className="w-5 h-5 text-[#F5E6C8] flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-['Bebas_Neue'] text-lg uppercase text-white tracking-wide">
-                    Pontualidade & Sem Fila
+                    Agendamento & Ordem de Chegada
                   </h4>
                   <p className="text-xs text-zinc-400 font-['Raleway']">
-                    Horário agendado é horário respeitado. Atendimento ágil para o seu dia a dia.
+                    Agende previamente o seu horário ou venha direto para ser atendido.
                   </p>
                 </div>
               </div>
@@ -110,39 +111,36 @@ export const About: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: Poster Image */}
+          {/* Right Column: Barbershop Photo (Unedited) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 flex flex-col justify-center"
           >
-            <div className="relative rounded-2xl overflow-hidden border border-[#F5E6C8]/20 bg-[#0d1017] p-2 shadow-2xl">
-              <div className="relative rounded-xl overflow-hidden aspect-[4/5] max-h-[460px]">
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-[#0d1017] p-2 shadow-2xl">
+              <div className="relative rounded-xl overflow-hidden aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
-                  alt="Barbearia Navalha Cascavel"
-                  className="w-full h-full object-cover filter brightness-[0.8] contrast-[1.15]"
+                  src={salaoNavalhaImg}
+                  alt="Salão da Barbearia Navalha em Cascavel"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    if (!target.src.includes('luzes_alinhado')) {
-                      target.src = '/images/luzes_alinhado_1790794918959.jpg';
-                    }
-                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#06070a] via-transparent to-transparent" />
-
-                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-lg bg-black/85 backdrop-blur-md border border-white/10">
-                  <p className="font-['Bebas_Neue'] text-2xl text-white tracking-wider uppercase leading-none">
-                    BARBEARIA NAVALHA
+              </div>
+              <div className="pt-3 pb-1 px-3 flex items-center justify-between">
+                <div>
+                  <p className="font-['Bebas_Neue'] text-xl text-white tracking-wider uppercase leading-none">
+                    NOSSO SALÃO
                   </p>
-                  <p className="text-xs text-[#F5E6C8] font-['Raleway'] mt-1">
-                    {BUSINESS_INFO.address}
+                  <p className="text-xs text-zinc-400 font-['Raleway'] mt-0.5">
+                    Ambiente limpo, organizado e climatizado • Cascavel - CE
                   </p>
                 </div>
+                <span className="text-[11px] font-['Bebas_Neue'] tracking-widest uppercase px-2.5 py-1 rounded bg-[#E31837]/20 text-[#E31837] border border-[#E31837]/30">
+                  Foto Real
+                </span>
               </div>
             </div>
           </motion.div>
@@ -176,7 +174,7 @@ export const About: React.FC = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover filter brightness-[0.8] contrast-[1.1] transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     referrerPolicy="no-referrer"
                     onError={(e) => {

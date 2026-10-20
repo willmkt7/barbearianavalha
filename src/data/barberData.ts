@@ -9,6 +9,7 @@ import matizacaoImg from '../assets/images/matizacao_violeta_1790879821311.jpg';
 import hidrataMatizaImg from '../assets/images/cabelo_platinado_sedoso_1790879835342.jpg';
 import comboPremiumImg from '../assets/images/combo_cabelo_barba_1790879854927.jpg';
 import barbaSimplesImg from '../assets/images/barba_simples_navalha_1790879870229.jpg';
+import salaoNavalhaImg from '../assets/images/foto_barbearia.jpg';
 
 export {
   bigodeImg,
@@ -20,7 +21,8 @@ export {
   matizacaoImg,
   hidrataMatizaImg,
   comboPremiumImg,
-  barbaSimplesImg
+  barbaSimplesImg,
+  salaoNavalhaImg
 };
 
 export const BUSINESS_INFO = {
@@ -198,16 +200,16 @@ export const COMFORT_FEATURES: ComfortFeature[] = [
   },
   {
     id: 'ambiente-novo',
-    title: 'Espaço Novo, Limpo & Arejado',
-    description: 'Barbearia nova no Centro de Cascavel. Ambiente bem ventilado, higienizado e organizado para atender você com respeito e atenção.',
+    title: 'Espaço Novo, Limpo & Climatizado',
+    description: 'Barbearia nova no Centro de Cascavel. Ambiente climatizado, higienizado e organizado para atender você com conforto.',
     highlight: 'Ambiente Limpo',
-    image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80'
+    image: salaoNavalhaImg
   },
   {
     id: 'corte-regua',
-    title: 'Corte na Régua & Sem Espera',
-    description: 'Degradê bem disfarçado, corte social alinhado e navalhas 100% descartáveis trocadas a cada cliente. Seu horário é atendido com pontualidade.',
-    highlight: 'Sem Enrolação',
+    title: 'Corte na Régua & Máquinas Profissionais',
+    description: 'Degradê bem disfarçado, corte social alinhado e navalhas 100% descartáveis trocadas a cada cliente. Atendimento por agendamento ou ordem de chegada.',
+    highlight: 'Corte na Régua',
     image: luzesImg
   }
 ];
@@ -283,9 +285,9 @@ export const GALLERY_ITEMS: GalleryImage[] = [
   },
   {
     id: '6',
-    title: 'Ambiente Vintage & Lounge',
+    title: 'Ambiente Climatizado & Organizado',
     category: 'ambiente',
-    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80',
+    image: salaoNavalhaImg,
     tag: 'Cascavel - CE'
   }
 ];
